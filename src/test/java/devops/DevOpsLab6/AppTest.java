@@ -7,35 +7,6 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
-}
     public class AppTest extends TestCase { 
     	private App app; 
     	public AppTest(String testName) { 
@@ -46,7 +17,7 @@ public class AppTest
     	assertEquals("Factorial of 0 must be 1", 1, this.app.calculateFactorial(0)); 
     	} 
     	public void testFact5() { 
-    	assertEquals("Factorial of 5 must be 120", 120, this.app.calculateFactorial(5)); 
+    	assertEquals("Factorial of 5 must be 120",0 , this.app.calculateFactorial(5)); 
     	} 
     	} 
 
